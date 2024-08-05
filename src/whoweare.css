@@ -1,0 +1,568 @@
+@font-face{
+    font-family: monserat;
+    src: url(text/static/Montserrat-ExtraLight.ttf);
+}
+@font-face{
+    font-family: Open ;
+    src: url(text/Open_Sans/static/OpenSans-Bold.ttf);
+}
+@font-face{
+    font-family: barlew;
+    src:url(text/Barlow_Condensed/BarlowCondensed-Bold.ttf)
+}
+@font-face{
+    font-family: monseratBold;
+    src:url(text/static/Montserrat-Bold.ttf)
+}
+@font-face{
+    font-family: monseratThin;
+    src:url(text/static/Montserrat-Thin.ttf)
+}
+@font-face{
+    font-family: monseratMedium;
+    src:url(text/static/Montserrat-Medium.ttf)
+}
+@font-face{
+    font-family: monseratExtraLight;
+    src:url(text/static/Montserrat-ExtraLight.ttf)
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-font{
+    font-family: monserat;
+    color: #FAFAFA;
+    font-weight: 600;
+}
+
+#mobile{
+    display: none;
+}
+#media-x{
+    display: none;
+}
+/* header */
+#header{
+    padding: 45px;
+    background-color: #082158;
+  }
+  #header #nav-bars p{
+    color: #FCCE2D;
+    font-family:Open,sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+  }
+  
+  #header #nav-bars button{
+    font-weight: 700;
+    height: 33px; 
+    background: transparent;
+    border:1.5px solid #FAFAFA;
+    padding: 0px 10px;
+    outline: none;
+    font-size: 20px;
+  }
+  
+  #header #nav-bars .nav li{
+    margin: 0px 10px;
+    list-style: none;
+  }
+  
+  #header #nav-bars .nav li a{
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+
+/* end of header style */
+
+
+/* start who-we-are section */
+#who-we-are{
+    padding:30px 45px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width: 80%;
+    position: relative;
+}
+
+#who-we-are .buttons a{
+    text-decoration: none;
+    font-family: monserat;
+    color: #2563EB;
+    font-weight: 600;
+    border: 2px solid #2563EB;
+    padding: 9px;
+    text-align: center;
+    width: 226px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+
+
+/* end of who-we-are section */
+
+/* about as start */
+
+#about_as{
+    padding:100px 80px;
+    padding-bottom: 0px;
+    min-height: 100vh;
+}
+
+#about_as #body{
+    margin-bottom: 300px;
+}
+
+#about_as #body .aboutas-img img{
+    width: 566px;
+    height: 600px;
+    
+}
+#about_as #body .aboutas-img:nth-child(2n){
+    transform: rotateX(-180deg);
+}
+
+#about_as #body .aboutas-img:nth-child(2n) img{
+    transform: rotateX(-180deg);
+}
+
+#about_as #body .aboutas-img{
+    position: relative;
+}
+
+#about_as #body .aboutas-img::after{
+    content: '';
+    position: absolute;
+    background-color: black;
+    top: -30px;
+    right: -30px;
+    width: 20%;
+    height: 5px;
+}
+
+#about_as #body .aboutas-img::before{
+    content: '';
+    position: absolute;
+    background-color: black;
+    top: -30px;
+    right: -30px;
+    width: 5px;
+    height: 20%;
+}
+#about_as #body .aboutas-img .border::after{
+    content: '';
+    position: absolute;
+    background-color: black;
+    bottom: -30px;
+    left: -30px;
+    width: 20%;
+    height: 5px;
+}
+#about_as #body .aboutas-img .border::before{
+    content: '';
+    position: absolute;
+    background-color: black;
+    bottom: -30px;
+    left: -30px;
+    width: 5px;
+    height: 20%;
+}
+
+
+#about_as #body .aboutas-img{
+    margin-right: 100px;
+    min-height: 60vh;
+}
+ 
+#about_as #body .aboutas-p{
+    min-height: 60vh;
+    /* margin-left: 100px; */
+}
+
+
+#about_as #body .aboutas-p h1{
+    font-family:barlew;
+    font-weight: 700;
+    font-size: 64px;
+    color: #2D5BFC;
+}
+#margion{
+    margin-right:30px;
+}
+#image-mergin{
+    margin-left: 50px;
+}
+
+#about_as #body .aboutas-p .aboutas-paragraph{
+    font-family: monseratExtraLight;
+    font-weight:900;
+    font-size: 22px;
+    color: #000000;
+    margin: 20px auto;
+}
+#about_as #body .aboutas-p h2{
+    font-family: monseratMedium;
+    font-weight: 500;
+    font-size: 24px;
+    color: #000000;
+}
+
+#about_as h2::before{
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #2563EB;
+    margin-right: 10px;
+}
+
+
+/* about_as ende */
+
+/* start of our-experts */
+
+#our-experts{
+    padding:30px 45px;
+    padding-top: 0px;
+    /* margin-top: 50px; */
+    position: relative;
+}
+
+#our-experts .buttons a{
+    text-decoration: none;
+    font-family: monserat;
+    color: #2563EB;
+    font-weight: 600;
+    margin-bottom: 15px;
+    border: 2px solid #2563EB;
+    padding: 9px;
+    text-align: center;
+    width: 226px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 22px;
+}
+#our-experts h1{
+    font-family:barlew;
+    font-weight: 300;
+    font-size: 64px;
+    color: #000000;
+}
+#our-experts #staffs{
+    margin:20px 0px;
+}
+#our-experts #staffs .staff{
+    margin-right: 15px;
+}
+#our-experts #staffs .staff:nth-child(2n){
+    margin-top: 100px;
+}
+#our-experts #staffs img{
+    box-shadow: 0px 5px 10px #000;
+}
+#our-experts #staffs p{
+    font-family: monserat;
+    font-weight: 400;
+    font-size: 24px;
+    color: #433E3F;
+    margin: 10px 0px;
+}
+#our-experts #staffs h2{
+    font-family: monseratMedium;
+    font-weight: 900;
+    font-size: 24px;
+    color: #000000;
+}
+
+/* start of why-choose-us section */
+
+/* end of services  */
+@media only screen and (max-width:1280px) {
+    #services .box-holder .box {
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #header{
+        min-height: 100%;
+        width: 100%;
+    }
+    #about_as #body .aboutas-img {
+        margin-left: 100px;
+        min-height: 50%;
+        margin-bottom: 50px;
+        width: 70%;
+    }
+    #about_as {
+        padding: 50px 45px;
+        height: 100%;
+    }
+    #about_as #body{
+        margin-bottom:50px ;
+    }
+    #who-we-are {
+        padding-bottom: 0px;
+        margin: 10px auto;
+    }
+    #about_as #body .aboutas-p {
+        min-height: 100%;
+        display: inline-block;
+        margin: 15px auto;
+    }
+    #about_as #body .aboutas-p h1{
+        margin: 30px auto;
+    }
+    #about_as #body .aboutas-img img {
+        width: 100%;
+        height: auto;
+    }
+    #about_as #body .aboutas-img{
+        margin: 100px auto;
+    }
+
+    #about_as #body .aboutas-p .aboutas-paragraph {
+       margin: 20px auto;
+    }
+    #about_as #body .aboutas-p .explor {
+        margin: 30px auto;
+    }
+
+    #about_as #body {
+        display: inline-block;
+        /* flex-direction: column;
+        align-items: center; */
+    }
+
+    #about_as #body .aboutas-p {
+        text-align: center;
+        margin-right: 0px;
+    }
+    #offer h1 {
+        font-size: 40px;
+    }
+    #our-experts #staffs{
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #header .hero h1 {
+        font-size: 35px;
+    }
+
+    #header .hero p {
+        font-size: 14px;
+    }
+
+    #about_as #body .aboutas-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    #about_as #body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about_as #body .aboutas-p {
+        text-align: center;
+    }
+
+    #offer #h1-text h1 {
+        font-size: 35px;
+    }
+
+    #offer #p-text p {
+        font-size: 16px;
+    }
+
+    #offer .box-holder {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #offer .box-holder .box {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #why-choose-us .text-holder {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #why-choose-us .text-holder .texts {
+        text-align: center;
+    }
+
+    #middeler {
+        padding: 20px;
+    }
+
+    #middeler h1 {
+        font-size: 35px;
+    }
+
+    #middeler p {
+        font-size: 16px;
+    }
+
+    #testemonial .testemonail-holder {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #testemonial .testemonail-holder img {
+        width: 200px;
+        height: auto;
+    }
+
+    #testemonial .testemonail-holder .testemonials {
+        margin-left: 0;
+        border-left: none;
+        padding-left: 0;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #header .hero h1 {
+        font-size: 25px;
+    }
+    #header #nav-bars .nav{
+        flex-direction: column;
+        justify-content: space-around;
+        position: fixed;
+        top: -25vh;
+        right: 0;
+        z-index: 10;
+        background: #082158;
+        width: 100%;
+        height: 25vh;
+        transition: 0.4s;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    }
+    #media-x{
+        position: absolute;
+        font-size: 30px;
+        top: 20px;
+        right:30px;
+        color: #FAFAFA;
+        font-family: monserat;
+        display: inline-block;
+    }
+    #header .hero {
+        padding: 50px 0px;
+        display: inline-block;
+    }
+    #mobile{
+        display: inline-block;
+    }
+    #header .hero p {
+        font-size: 12px;
+    }
+    #about_as{
+        padding: 20px 45px;
+    }
+    #about_as #body .aboutas-img {
+        min-height: 50%;
+        width: 90%;
+        margin: 100px auto;
+    }
+    #about_as #body .aboutas-img img {
+        width: 100%;
+        height: auto;
+    }
+    #about_as #body .aboutas-p h1 {
+        font-size: 45px;
+    }
+
+    #about_as #body {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0px;
+    }
+    #about_as #body .aboutas-p h1 {
+        margin: 0px auto;
+    }
+    #about_as #body .aboutas-p {
+        text-align: center;
+    }
+    #who-we-are {
+        padding: 10px 45px;
+        margin-bottom: 0px;
+    }
+    #about_as #body .aboutas-p h2 {
+        font-size: 20px;
+    }
+    #our-experts h1 {
+        font-size: 34px;
+    }
+    #our-experts #staffs .staff {
+        margin: 25px auto;
+    }
+    #our-experts #staffs .staff:nth-child(2n) {
+        margin-top: 0px;
+    }
+   
+    #offer h1 {
+        font-size: 20px;
+        margin: auto;
+    }
+    #offer {
+        padding: 20px 30px;
+        width: 90%;
+    }
+    #offer .buttons{
+        display: inline-block;
+        width: 100%;
+    }
+    #offer .buttons a{
+        display: block;
+        /* margin: 10px auto; */
+        margin: 13px 0px;
+        width: 70%;
+        font-size: 16px;
+    }
+   
+    #services p {
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+    #services .service_holder h1 {
+        font-size: 30px;
+    }
+    #services .service_holder  {
+        padding-bottom: 20px;
+    }
+    #services .service_holder .text-hidden {
+        width: 100%;
+        font-size: 15px;
+    }
+    #services .box-holder .box {
+        width: 100%;
+    }
+    #services .service_holder .text {
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+

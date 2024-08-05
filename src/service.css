@@ -1,0 +1,416 @@
+  @font-face{
+    font-family: monserat;
+    src: url("./text/static/Montserrat-ExtraLight.ttf");
+  }
+  @font-face{
+    font-family: Open ;
+    src: url("./text/Open_Sans/static/OpenSans-Bold.ttf");
+  }
+  @font-face{
+    font-family: barlew;
+    src:url("./text/Barlow_Condensed/BarlowCondensed-Bold.ttf")
+  }
+  @font-face{
+    font-family: monseratBold;
+    src:url("./text/static/Montserrat-Bold.ttf")
+  }
+  @font-face{
+    font-family: monseratThin;
+    src:url("./text/static/Montserrat-Thin.ttf")
+  }
+  *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  .flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-font{
+    font-family: monserat;
+    color: #FAFAFA;
+    font-weight: 600;
+    font-size: 22px;
+  }
+  
+  #mobile{
+    display: none;
+  }
+  #media-x{
+    display: none;
+  }
+  /* header */
+  
+  #header{
+    padding: 45px;
+    background-color: #082158;
+  }
+  #header #nav-bars p{
+    color: #FCCE2D;
+    font-family:Open,sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+  }
+  
+  #header #nav-bars button{
+    font-weight: 700;
+    height: 33px; 
+    background: transparent;
+    border:1.5px solid #FAFAFA;
+    padding: 0px 10px;
+    outline: none;
+    font-size: 20px;
+  }
+  
+  #header #nav-bars .nav li{
+    margin: 0px 10px;
+    list-style: none;
+  }
+  
+  #header #nav-bars .nav li a{
+    text-decoration: none;
+  }
+  
+  /* end of header style */
+  
+  
+  /* start offer section */
+  #offer{
+    padding:30px 45px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width: 80%;
+    position: relative;
+  }
+  #offer .background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/backround.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(0 0, 80% 0, 100% 100%,0% 100%);
+    transform: rotateX(180deg);
+    z-index: -10;
+  }
+  
+  #offer .buttons a{
+    text-decoration: none;
+    font-family: monserat;
+    color: #FAFAFA;
+    font-weight: 600;
+    border: 1.5px solid #FAFAFA;
+    padding: 9px;
+    text-align: center;
+    width: 226px;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  #offer h1{
+    font-family: barlew, sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    margin: 15px 0px;
+    color: aliceblue;
+  }
+  
+  
+  /* end of offer section */
+  
+  /* start of why-choose-us section */
+  #services{
+    padding:0px 45px;
+    padding-bottom: 100px;
+    transition: 0.5s all ease;
+  }
+  #services p{
+    font-family: monserat;
+    font-size: 24px;
+    font-weight: 600;
+    color: #0a0a0a;
+    margin-bottom: 30px;
+  }
+  #services .service_holder{
+    padding: 30px 0px;
+    border-top: 2px solid #2563EB;
+    border-bottom: 2px solid #2563EB;
+  }
+  #services .service_holder a{
+    text-decoration: none;
+    font-family: monserat;
+    color: #2563EB;
+    font-weight: 600;
+    border: 3px solid #2563EB;
+    padding: 6px;
+    text-align: center;
+    width: 60px;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  
+  #services .service_holder .explor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2563EB;
+    border-color: #2563EB;
+    font-weight: 600;
+  }
+  #services .service_holder .explor div{
+    display: flex;
+    align-items: center;
+  }
+  #services .service_holder .explor div p{
+    margin-right: 3px;
+    margin-bottom: 0px;
+  }
+  #services .service_holder h1{
+    font-family: monseratBold;
+    font-size: 50px;
+    color:#000000;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  #services .service_holder .text{
+    font-size: 24px;
+    font-family: monseratThin;
+    margin-bottom: 0px;
+    transition: 0.5s all ease;
+  }
+  
+  #services .service_holder .text-hidden{
+    width: 80%;
+    font-size: 24px;
+  }
+  
+  #services .box-holder{
+    min-width: 100%;
+    margin:30px 0px ;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  #services .box-holder .box{
+    background-color: #082158;
+    width: 400px;
+    height: 150px; 
+    padding: 25px 15px;
+    box-shadow: 2px 5px 10px #082158 ;
+    border-radius: 10px;
+    margin: 10px 0px;
+    /* margin-left: 20px; */
+  }
+  
+  #services .box-holder .box-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  #services .box-holder .box-header h2{
+    font-weight: 700;
+    color: #FAFAFA;
+    font-size: 18px;
+    font-family: monserat;
+  }
+  #services .box-holder #box-text{
+    font-family: monserat;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+  }
+  
+  #services .hidden-explantion{
+    display: none;
+    transition: 0.5s all ease;
+  }
+  
+  /* end of services  */
+  @media only screen and (max-width:1280px) {
+    #services .box-holder .box {
+        width: 350px;
+    }
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    #header{
+        min-height: 100%;
+        width: 100%;
+    }
+    #offer h1 {
+        font-size: 40px;
+    }
+    #services .service_holder .text-hidden {
+        width: 100%;
+        font-size: 20px;
+    }
+    #services .box-holder .box {
+        width: 45%;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    #header .hero h1 {
+        font-size: 35px;
+    }
+  
+    #header .hero p {
+        font-size: 14px;
+    }
+  
+    #about_as #body .aboutas-img img {
+        width: 100%;
+        height: auto;
+    }
+  
+    #about_as #body {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    #about_as #body .aboutas-p {
+        text-align: center;
+    }
+  
+    #offer #h1-text h1 {
+        font-size: 35px;
+    }
+  
+    #offer #p-text p {
+        font-size: 16px;
+    }
+  
+    #offer .box-holder {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    #offer .box-holder .box {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+  
+    #why-choose-us .text-holder {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    #why-choose-us .text-holder .texts {
+        text-align: center;
+    }
+  
+    #middeler {
+        padding: 20px;
+    }
+  
+    #middeler h1 {
+        font-size: 35px;
+    }
+  
+    #middeler p {
+        font-size: 16px;
+    }
+  
+    #testemonial .testemonail-holder {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    #testemonial .testemonail-holder img {
+        width: 200px;
+        height: auto;
+    }
+  
+    #testemonial .testemonail-holder .testemonials {
+        margin-left: 0;
+        border-left: none;
+        padding-left: 0;
+        text-align: center;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    #header .hero h1 {
+        font-size: 25px;
+    }
+    #header #nav-bars .nav{
+        flex-direction: column;
+        justify-content: space-around;
+        position: fixed;
+        top: -25vh;
+        right: 0;
+        z-index: 10;
+        background: #082158;
+        width: 100%;
+        height: 25vh;
+        transition: 0.4s;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    }
+    #media-x{
+        position: absolute;
+        font-size: 30px;
+        top: 20px;
+        right:30px;
+        color: #FAFAFA;
+        font-family: monserat;
+        display: inline-block;
+    }
+    #header .hero {
+        padding: 50px 0px;
+        display: inline-block;
+    }
+    #mobile{
+        display: inline-block;
+    }
+    #header .hero p {
+        font-size: 12px;
+    }
+    #offer h1 {
+        font-size: 20px;
+        margin: auto;
+    }
+    #offer {
+        padding: 20px 30px;
+        width: 90%;
+    }
+    #offer .buttons{
+        display: inline-block;
+        width: 100%;
+    }
+    #offer .buttons a{
+        display: block;
+        /* margin: 10px auto; */
+        margin: 13px 0px;
+        width: 70%;
+        font-size: 16px;
+    }
+   
+    #services p {
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+    #services .service_holder h1 {
+        font-size: 30px;
+    }
+    #services .service_holder  {
+        padding-bottom: 20px;
+    }
+    #services .service_holder .text-hidden {
+        width: 100%;
+        font-size: 15px;
+    }
+    #services .box-holder .box {
+        width: 100%;
+    }
+    #services .service_holder .text {
+        font-size: 15px;
+    }
+  }
+  

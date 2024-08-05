@@ -1,0 +1,224 @@
+@font-face{
+    font-family: monserat;
+    src: url(text/static/Montserrat-ExtraLight.ttf);
+}
+@font-face{
+    font-family: Open ;
+    src: url(text/Open_Sans/static/OpenSans-Bold.ttf);
+}
+@font-face{
+    font-family: barlew;
+    src:url(text/Barlow_Condensed/BarlowCondensed-Bold.ttf)
+}
+@font-face{
+    font-family: monseratBold;
+    src:url(text/static/Montserrat-Bold.ttf)
+}
+@font-face{
+    font-family: monseratThin;
+    src:url(text/static/Montserrat-Thin.ttf)
+}
+@font-face{
+    font-family: monseratMedium;
+    src:url(text/static/Montserrat-Medium.ttf)
+}
+@font-face{
+    font-family: monseratExtraLight;
+    src:url(text/static/Montserrat-ExtraLight.ttf)
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-font{
+    font-family: monserat;
+    color: #FAFAFA;
+    font-weight: 600;
+}
+
+#mobile{
+    display: none;
+}
+#media-x{
+    display: none;
+}
+/* header */
+
+#header{
+    padding: 45px;
+    background-color: #082158;
+}
+#header #nav-bars p{
+    color: #FCCE2D;
+    font-family:Open,sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+#header #nav-bars button{
+    font-weight: 700;
+    height: 33px; 
+    background: transparent;
+    border:1.5px solid #FAFAFA;
+    padding: 0px 10px;
+    outline: none;
+}
+
+#header #nav-bars .nav li{
+    margin: 0px 10px;
+    list-style: none;
+}
+
+#header #nav-bars .nav li a{
+    text-decoration: none;
+}
+
+
+/* end of header section */
+
+/* start of who we are section */
+#who-we-are{
+    padding:30px 45px;
+    padding-bottom: 0xp;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    width: 80%;
+    position: relative;
+}
+
+#who-we-are .buttons a{
+    text-decoration: none;
+    font-family: monserat;
+    color: #2563EB;
+    font-weight: 900;
+    border: 1.5px solid #2563EB;
+    padding: 9px;
+    text-align: center;
+    width: 260px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 28px;
+}
+/* end of who-we-are section  */
+
+#offer{
+    padding:100px 45px;
+    padding-top: 50px;
+}
+
+#offer .box-holder{
+    min-width: 100%;
+    margin:30px 0px ;
+    gap: 1;
+}
+
+#offer .box-holder .box{
+    background-color: #082158;
+    width: 350px;
+    padding: 25px;
+    box-shadow: 2px 5px 10px #082158 ;
+    border-radius: 10px;
+    text-align: center;
+}
+#offer .box-holder .box h1{
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: 32px;
+    font-family: monserat;
+    margin-top: 12px;
+}
+#offer .box-holder .box p{
+    font-weight: 400;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: monserat;
+    margin: 12px auto;
+}
+
+/* section offer end */
+
+/* start section map */
+.map-form-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 100px 45px;
+}
+
+.map {
+    width: 50%;
+    height: 500px;
+}
+
+.form {
+    width: 45%;
+    padding: 20px;
+    background-color: #002f6c;
+    color: #fff;
+    box-shadow: 2px 5px 10px #082158 ;
+    border-radius: 10px;
+}
+
+.form h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-family: monserat;
+    font-size: 32px;
+    font-weight: 900;
+}
+
+input[type='text']{
+    background: transparent;
+    outline: none;
+    padding: 10px 0px !important;
+    border-bottom:1px solid #FFFFFF !important;
+    font-size: 20px;
+}
+
+.form input, .form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    box-sizing: border-box;
+}
+.form textarea{
+    width: 100%;
+    height: 230px;
+    background: transparent;
+    outline: none;
+    padding: 10px 0px !important;
+    border-bottom:1px solid #FFFFFF !important;
+    font-size: 24px;
+}
+
+.form button {
+    text-decoration: none;
+    font-family: monserat;
+    color: #FFFFFF;
+    font-weight: 700;
+    border: 1.5px solid #FFFFFF;
+    padding: 9px;
+    text-align: center;
+    width: 180px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top:15px ;
+    background: transparent;
+}
+
+.form button:hover {
+    background-color: #f4f4f4;
+}
+
+/* map section end */
+
+
+

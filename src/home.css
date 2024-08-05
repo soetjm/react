@@ -1,0 +1,546 @@
+@font-face{
+    font-family: monserat;
+    src: url("./text/static/Montserrat-ExtraLight.ttf");
+}
+@font-face{
+    font-family: Open ;
+    src: url("./text/Open_Sans/static/OpenSans-Bold.ttf");
+}
+@font-face{
+    font-family: barlew;
+    src:url("./text/Barlow_Condensed/BarlowCondensed-Bold.ttf")
+}
+@font-face{
+    font-family: monseratBold;
+    src:url(text/static/Montserrat-Bold.ttf)
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-font{
+    font-family: monserat;
+    color: #FAFAFA;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+#mobile{
+    display: none;
+}
+#media-x{
+    display: none;
+}
+/* header */
+
+#header{
+    padding: 45px;
+    min-height: 103vh;
+    background-image: url("./images/backround.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#header #nav-bars p{
+    color: #FCCE2D;
+    font-family:Open,sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+}
+
+#header #nav-bars button{
+    font-weight: 700;
+    height: 33px; 
+    background: transparent;
+    border:1.5px solid #FAFAFA;
+    padding: 0px 10px;
+    outline: none;
+    font-size: 20px;
+}
+
+#header #nav-bars .nav li{
+    margin: 0px 10px;
+    list-style: none;
+}
+
+#header #nav-bars .nav li a{
+    text-decoration: none;
+}
+
+#header .hero{
+    padding: 50px 0px;
+}
+#header .hero h1{
+    font-family: barlew,sans-serif;
+    font-size: 96px;
+    font-weight: 700;
+    margin: 15px 0px;
+}
+#header .hero h1 span{
+    color: #2563EB;
+}
+
+#header .hero p{
+    font-family: monserat;
+    font-weight: 400;
+    font-size: 24px;
+    color:#FFFFFF;
+    padding: 10px 0px;
+}
+
+#header .hero .explor{
+    font-size:monserat;
+    font-weight: 400;
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+#header .hero  div div{
+    display: flex;
+    align-items: center;
+    /* padding: 10px 0px; */
+}
+
+#header .hero  div div span{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    border-bottom:1px solid #FFFFFF;
+}
+
+/* end of header style */
+
+/* start of about as */
+
+#about_as{
+    padding:100px 45px;
+    min-height: 100vh;
+}
+
+#about_as #body .aboutas-img img{
+    width: 566px;
+    height: 803px;
+    
+}
+
+#about_as #body .aboutas-img{
+    margin-right: 100px;
+    min-height: 100vh;
+}
+ 
+#about_as #body .aboutas-p{
+    min-height: 100vh;
+    /* margin-left: 100px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#about_as #body .aboutas-p a{
+    text-decoration: none;
+    font-family: monserat;
+    color: #2563EB;
+    font-weight: 600;
+    border: 1.5px solid #2563EB;
+    padding: 9px;
+    text-align: center;
+    width: 226px;
+    border-radius: 30px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#about_as #body .aboutas-p h1{
+    font-family:barlew;
+    font-weight: 700;
+    font-size: 96px;
+}
+#about_as #body .aboutas-p p{
+    font-family:monserat;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+#about_as #body .aboutas-p .aboutas-paragraph{
+    font-family: monserat;
+    font-weight:400;
+    font-size: 20px;
+    color: #0A0A0B;
+}
+
+#about_as #body .aboutas-p div div .num {
+    font-family: monserat;
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+#about_as #body .aboutas-p div div .text{
+    font-family: monsetat;
+    font-weight: 400;
+    font-size:24px;
+    color: #726C6C;
+}
+
+#about_as #body .aboutas-p .explor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0A0A0B;
+    border-color: #0A0A0B;
+    font-weight: 600;
+}
+#about_as #body .aboutas-p .explor div{
+    display: flex;
+    align-items: center;
+}
+#about_as #body .aboutas-p .explor div p{
+    margin-right: 10px;
+}
+
+/* end of aboutas section */
+
+
+/* start offer section */
+#offer{
+    padding:100px 45px;
+}
+
+#offer .buttons a{
+    text-decoration: none;
+    font-family: monserat;
+    color: #2563EB;
+    font-weight: 600;
+    border: 2px solid #2563EB;
+    padding: 13px;
+    text-align: center;
+    width: 226px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+#offer .buttons .explor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0A0A0B;
+    border-color: #0A0A0B;
+    font-weight: 600;
+}
+
+#offer .buttons .explor div{
+    display: flex;
+    align-items: center;
+}
+#offer .buttons .explor div p{
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+#offer #h1-text{
+    display: flex;
+    margin: 20px 0px;
+}
+#offer #h1-text h1{
+    flex: 3;
+    font-family:barlew;
+    font-weight: 700;
+    font-size: 64px;
+}
+
+#offer #h1-text div{
+    flex: 4;
+}
+
+#offer #p-text{
+    display: flex;
+    margin: 20px 0px;
+}
+#offer #p-text p{
+    flex: 6;
+    font-family: monserat;
+    font-weight: 400;
+    font-size: 24px;
+    color: #5A5555;
+}
+#offer #p-text div{
+    flex: 2;
+}
+
+#offer .box-holder{
+    min-width: 100%;
+    margin:30px 0px ;
+    gap: 1;
+}
+
+#offer .box-holder .box{
+    background-color: #082158;
+    max-width: 500px;
+    padding: 25px;
+    box-shadow: 2px 5px 10px #082158 ;
+    border-radius: 10px;
+    min-height: 270px;
+}
+
+#offer .box-holder .box-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+#offer .box-holder .box-header img{
+    width: 55px;
+    height: 55px;
+}
+
+#offer .box-holder .box-header h2{
+    font-weight: 700;
+    color: #FAFAFA;
+    font-size: 28px;
+    font-family: monserat;
+    margin-left:20px;
+}
+
+#offer .box-holder #box-text{
+    font-family: monserat;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: italic;
+    color: #FFFFFF;
+    margin-left: 70px;
+    margin-bottom: 15px;
+}
+#offer .box-holder .box-footer{
+    display: flex;
+    align-items: center;
+}
+
+#offer .box-holder .box-footer .explor{
+    font-family:monserat;
+    font-weight: 800;
+    font-size: 20px;
+    margin-right: 5px;
+    color: #FFFFFF;
+}
+
+#offer .box-holder .box-footer h2{
+    font-weight: 700;
+    color: #FAFAFA;
+    font-size: 24px;
+    font-family: monserat;
+}
+#offer .box-holder .box-footer div{
+    display: flex;
+    align-items: center;
+}
+#offer .box-holder .box-footer div span{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    border-bottom:1px solid #FFFFFF;
+    margin-left: 49px;
+}
+
+/* end of offer section */
+
+/* start of why-choose-us section */
+#why-choose-us{
+    padding:0px 45px;
+    padding-bottom: 100px;
+}
+#why-choose-us a{
+    text-decoration: none;
+    font-family: monserat;
+    color: #2563EB;
+    font-weight: 600;
+    border: 1.5px solid #2563EB;
+    padding: 9px;
+    text-align: center;
+    width: 226px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+#why-choose-us .text-holder{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#why-choose-us .text-holder .none{
+    flex: 2;
+}
+#why-choose-us .text-holder .texts{
+    flex: 5;
+}
+
+#why-choose-us .text-holder .texts h1{
+    font-family:barlew;
+    font-weight: 700;
+    font-size: 90px;
+    margin: 20px 0px;
+    color: #0A0A0B;
+}
+
+#why-choose-us .text-holder .texts p{
+    font-family: monserat;
+    font-weight: 900;
+    font-size: 24px;
+    margin: 10px 0px;
+    color: #5A5555;
+}
+
+#why-choose-us .text-holder .texts .wraper h1 {
+    font-family: monseratBold;
+    font-weight: 700;
+    font-size: 24px;
+    color: #000000;
+}
+
+#why-choose-us .text-holder .texts .wraper h1::before{
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #2563EB;
+    margin-right: 10px;
+}
+
+/* why choos as finesh */
+
+/* middler start */
+
+#middeler{
+    width: 100%;
+    /* height: 461px; */
+    background-color: #082158;
+    margin:30px 0px;
+    text-align: center;
+    padding: 40px 150px;
+}
+
+#middeler h1{
+    font-family:barlew;
+    font-weight: 700;
+    font-size: 90px;
+    color: #FAFAFA;
+}
+
+#middeler p{
+    font-family: monserat;
+    font-weight: 400;
+    font-size: 24px;
+    color: #FAFAFA;
+    margin: 10px 0px;
+}
+
+#middeler button{
+    background-color:#2563EB;
+    color: #FFFFFF;
+    border: none;
+    font-family: monserat;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 10px 60px;
+    margin-top: 50px;
+}
+
+
+/* end of middeler */
+
+/* start testimonial */
+
+#testemonial{
+    padding:100px 45px;
+    min-height: 100vh;
+}
+
+#testemonial a{
+    text-decoration: none;
+    font-family: monserat;
+    color: #2563EB;
+    font-weight: 600;
+    border: 1.5px solid #2563EB;
+    padding: 10px 30px;
+    text-align: center;
+    /* width: 226px; */
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 20px 0px;
+    font-size: 24px
+}
+
+#testemonial h1{
+    font-family:barlew;
+    font-weight: 700;
+    font-size: 90px;
+    margin: 20px 0px;
+    color: #121417;
+    margin: 30px 0px;
+}
+
+
+#testemonial .testemonail-holder img{
+    width: 600px;
+    height: 600px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+#testemonial .testemonail-holder .testemonials{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 50px;
+    border-left: 1px solid #2D5BFC;
+    padding-left: 50px;
+
+}
+
+#testemonial .testemonail-holder .testemonials img{
+    width: 72px;
+    height: 72px;
+}
+#testemonial .testemonail-holder .testemonials p{
+    font-family: monserat;
+    font-weight: 600;
+    font-size: 24px;
+}
+#testemonial .testemonail-holder .testemonials div p{
+    font-family: monserat;
+    font-weight: 400;
+    font-size: 24px;
+    color: #433E3F;
+}
+#testemonial .testemonail-holder .testemonials div .t-name{
+    color: #2D5BFC;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+#testemonial .testemonail-holder .testemonials .arows{
+    text-align: right;
+}
+#testemonial .testemonail-holder .testemonials .arows img{
+    border: 1px solid #2D5BFC;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
